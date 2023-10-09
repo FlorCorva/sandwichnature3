@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandwich Nature - Healthy Food!</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-banner.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-banner-bg.png"
+      media="min-width(768px)"
+    />
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-bg2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-bg3.jpg" />
+
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo"
+            >Sandwich Nature<span class="span">.</span></a
+          >
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="navbar-link" data-nav-link
+                >Sobre nosotros</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="navbar-link" data-nav-link>Contactanos</a>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="mailto:info@arganture.es">Empresas</a></li>
+                <li class="submenu-item"><a href="mailto:info@arganture.es">Particulares</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search" data-search-btn>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="btn btn-hover descargar-pdf" data-pdf="assets/archivos/catalogo.pdf">Catálogo</button>
+
+          <button
+            class="nav-toggle-btn"
+            aria-label="Toggle Menu"
+            data-menu-toggle-btn
+          >
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-container>
+      <div class="search-box">
+        <input
+          type="search"
+          name="search"
+          aria-label="Search here"
+          placeholder="Type keywords here..."
+          class="search-input"
+        />
+
+        <button
+          class="search-submit"
+          aria-label="Submit search"
+          data-search-submit-btn
+        >
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <button
+        class="search-close-btn"
+        aria-label="Cancel search"
+        data-search-close-btn
+      ></button>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="hero"
+          id="home"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Comer, dormir y</p>
+
+              <h2 class="h1 hero-title">Sandwich Nature!</h2>
+
+              <p class="hero-text">
+                Un alimento es cualquier sustancia que se consume para proporcionar apoyo nutricional al organismo. Desde Sandwich Nature además, queremos proporcionarte una experiencia agradable llena de sabor con productos saludables y sostenibles.
+              </p>
+
+              <button class="btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20realizar%20un%20pedido', '_blank');">Realizar un pedido</button>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner-bg.png"
+                width="820"
+                height="716"
+                alt=""
+                aria-hidden="true"
+                class="w-100 hero-img-bg"
+              />
+
+              <!-- <img
+                src="./assets/images/hero-banner.png"
+                width="700"
+                height="637"
+                loading="lazy"
+                alt="#"
+                class="w-100 hero-img"
+              /> -->
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROMO
+      -->
+
+        <section class="section section-divider white promo">
+          <div class="container">
+            <ul class="promo-list has-scrollbar">
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+              <!-- icon666.com - MILLIONS vector ICONS FREE -->
+              <svg id="flat" 
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70" 
+              height="70" > 
+    <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                
+                
+                  </div>
+
+                  <h3 class="h3 card-title">Artesano</h3>
+
+                  <p class="card-text">
+                    Variedades: Pescado (salmón o atún), Pollo, Jamón ahumado,
+                    Pavo, Queso azul y Club Cheese!
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-4.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="Maxican Pizza"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+                    <svg id="flat" 
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70" 
+              height="70" > 
+    <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                
+                
+                  </div>
+
+                  <h3 class="h3 card-title">¡Artesano HOT!</h3>
+
+                  <p class="card-text">
+                    Variedades: Cubano caliente, Pollo BBQ caliente, Sobrasada
+                    con queso caliente, Crema de chocolate.
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-2.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="Soft Drinks"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+                    <svg id="flat" 
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="70" 
+                    height="70" > 
+          <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                      
+                      
+                  </div>
+
+                  <h3 class="h3 card-title">Fresh</h3>
+
+                  <p class="card-text">
+                    Variedades: Pavo vegetal, Pollo-bacon ahumado, Tortilla y
+                    empanada de atun, también VEGANO.
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-3.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="French Fry"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+                    <svg id="flat" 
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="70" 
+                    height="70" > 
+          <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                      
+                      
+                  </div>
+                  <h3 class="h3 card-title">Pan de agua</h3>
+
+                  <p class="card-text">
+                    Variedades: Tortilla de patatas (salsa brava, alioli y pimientos verdes), bacon & cheddar, lomo asado con pimientos y mas!.
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-6.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="Burger Kingo"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+                    <svg id="flat" 
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70" 
+              height="70" > 
+    <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                
+                
+                  </div>
+
+                  <h3 class="h3 card-title">American Style</h3>
+
+                  <p class="card-text">
+                    Variedades: Phillsteak (cerdo asado), BBQ (pulled pork, bacon). ¡Aptos para horno de convección!
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-1.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="Burger Kingo"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+
+              <li class="promo-item">
+                <div class="promo-card">
+                  <div class="card-icon">
+                    <svg id="flat" 
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="70" 
+                    height="70" > 
+          <path d="m60 44.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m60 31.5747c0-4.522-3.47-8.5974-9-11.4416a45.7384 45.7384 0 0 0 -38 0c-5.53 2.8442-9 6.92-9 11.4416a3.4312 3.4312 0 0 0 3.4312 3.4253h49.1376a3.4312 3.4312 0 0 0 3.4312-3.4253z" fill="#fcbb60"/><path d="m58 35h-52a2 2 0 0 0 0 4c3.2487 0 3.2487 4 6.4974 4s3.2487-4 6.4974-4 3.2487 4 6.4975 4 3.25-4 6.4992-4c3.2478 0 3.2478 4 6.4957 4 3.2506 0 3.2506-4 6.5013-4 3.2528 0 3.2528 4 6.5058 4s3.2528-4 6.5057-4a2 2 0 0 0 0-4z" fill="#96d21f"/><g fill="#fba447"><path d="m16 26a2.9992 2.9992 0 0 0 3-3v-5.1062a35.7367 35.7367 0 0 0 -6 2.2393v2.8669a2.9992 2.9992 0 0 0 3 3z"/><path d="m48 26a2.9992 2.9992 0 0 0 3-3v-2.8669a35.7367 35.7367 0 0 0 -6-2.2393v5.1062a2.9992 2.9992 0 0 0 3 3z"/><path d="m35 25v-8.89c-.98-.0684-1.98-.11-3-.11s-2.02.0421-3 .11v8.89a3 3 0 0 0 6 0z"/></g></svg>
+                      
+                      
+                  </div>
+
+                  <h3 class="h3 card-title">Wraps</h3>
+
+                  <p class="card-text">
+                    Variedades: Wrap de pollo asado al curry, jamon cocido y queso cheddar y de atún! ¡Riquisimos!
+                  </p>
+
+                  <img
+                    src="./assets/images/promo-5.png"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    alt="Chicken Masala"
+                    class="w-100 card-banner"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section section-divider gray about" id="about">
+          <div class="container">
+            <div class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="509"
+                height="459"
+                loading="lazy"
+                alt="Burger with Drinks"
+                class="w-100 about-img"
+              />
+
+              <!-- <img
+                src="./assets/images/sale-shape-red.png"
+                width="216"
+                height="226"
+                alt="get up to 50% off now"
+                class="abs-img scale-up-anim"
+              /> -->
+            </div>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">
+                ¿Quienes somos?
+                <span class="span">Te contamos sobre nosotros!</span>
+              </h2>
+
+              <p class="section-text">
+                Nuestra misión es proporcionar alimentos nutritivos y saludables, ofreciendo opciones diferenciadas en el sector y promoviendo el hábito de consumo de productos "ready to eat" con calidad y sabor. Buscamos generar valor en toda la cadena de suministro y mantener un clima laboral saludable que permita el crecimiento profesional de nuestro equipo.
+
+Nuestra visión es ser percibidos por el cliente como la primera opción en el momento de compra para satisfacer sus necesidades en la categoría de la V gama fría. Nos basamos en tres pilares fundamentales: la constante innovación, el uso de materia prima de máxima calidad y una producción plena y sostenible en el tiempo.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span"
+                    >Innovación: Nos destacamos por anticiparnos y ofrecer ideas frescas al consumidor.</span
+                  >
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span"
+                    >Calidad: Generamos confianza en nuestros clientes al alcanzar la excelencia en todo lo que hacemos.</span
+                  >
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span"
+                    >Compromiso: Actuamos de manera ética y responsable, implicándonos en la consecución de nuestros objetivos.</span
+                  >
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span"
+                    >Personas en primer lugar: Creamos valor a través del trabajo en equipo y el desarrollo personal y profesional de nuestro equipo.</span
+                  >
+                </li>
+              </ul>
+
+              <p class="section-text">
+                Estos principios nos impulsan a ser líderes en la industria y a satisfacer las necesidades de nuestros clientes y consumidores de manera constante y sostenible.
+              </p>
+
+              <button class="btn btn-hover" data-pdf="assets/archivos/MVV.pdf">Saber mas</button>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FOOD MENU
+      -->
+
+        <section class="section food-menu" id="food-menu">
+          <div class="container">
+            <p class="section-subtitle">Productos populares</p>
+
+            <h2 class="h2 section-title">
+              Descubre nuestros productos
+              <span class="span">más atractivos</span>
+            </h2>
+
+            <p class="section-text">
+              Un mundo de sabor saludable.
+            </p>
+
+            <!-- <ul class="fiter-list">
+              <li>
+                <button class="filter-btn active">Todos</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Artesano</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Fresh</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Pan de agua</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Wraps</button>
+              </li>
+            </ul> -->
+
+            <ul class="food-menu-list">
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-1.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Fried Chicken Unlimited"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Jamon ahumado con salsa inglesa.</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Artesano</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    Jamón cocido y ahumado, salsa inglesa, queso cheddar, tomate, lechuga.
+                  </h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Precio:</p>
+
+                    <data class="price">$350.00</data>
+
+                    <del class="del" value="69.00">$69.00</del>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-2.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Burger King Whopper"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Cubano caliente</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Artesano Hot</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Pulled pork, pepinillo, cebolla caramelizada, queso edam, queso cheddar.</h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Precio:</p>
+
+                    <data class="price" value="29.00">$350.00</data>
+
+                    <del class="del">$39.00</del>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-6.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="White Castle Pizzas"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Pavo Vegetal</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Fresh</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Pechuga de pavo al natural ahumada, mezcla de vegetales, lechuga, pepinillo, zanahoría, pimientos asados.</h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Precio:</p>
+
+                    <data class="price" value="49.00">$350.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div> -->
+                </div>
+              </li>
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-4.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Bell Burrito Supreme"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Hummus con verduras asadas</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Fresh</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Hummus con verduras asadas.</h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Precio:</p>
+
+                    <data class="price" value="59.00 ">$350.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-5.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Kung Pao Chicken BBQ"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Tortilla de patata y pimientos verdes asados</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Pan de agua</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    Pan de agua, tortilla de patata y cebolla, pimientos verdes asados.</h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Precio:</p>
+
+                    <data class="price" value="49.00">$350.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-6.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Wendy's Chicken"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Pollo asado al curry</div>
+
+                    <button class="btn food-menu-btn" onclick="window.open('https://wa.me/+34620849421?text=Hola%20quiero%20saber%20mas%20sobre%20este%20producto');">Haz tu pedido</button>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Wraps</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Ingredientes, mezcla de pollo asado, bacón ahumado, pasas y curry, queso crema, lechuga.</h3>
+
+                  <!-- <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="49.00">$350.00</data>
+
+                    <del class="del">$69.00</del> -->
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section
+          class="section section-divider white cta"
+          style="background-image: url('./assets/images/hero-bg4.png')"
+        >
+          <div class="container">
+            <div class="cta-content">
+              <h2 class="h2 section-title">
+                Producción amigable con el 
+                <span class="span">medio ambiente.</span>
+              </h2>
+
+              <p class="section-text">
+                Nuestros procesos de producción están diseñados de manera respetuosa con la naturaleza, utilizando insumos reutilizables y minimizando los residuos. Es por eso también que poseemos calidad no solo en nuestra elaboración sino también en nuestros colaboradores.  
+              </p>
+
+              <!-- <button class="btn btn-hover" id="saberMas">Conocé más</button> -->
+            </div>
+
+            <!-- <figure class="cta-banner">
+              <img
+                src="./assets/images/cta-bannerr.png"
+                width="700"
+                height="637"
+                loading="lazy"
+                alt="Burger"
+                class="w-100 cta-img"
+              /> -->
+
+              <!-- <img
+                src="./assets/images/sale-shape.png"
+                width="216"
+                height="226"
+                loading="lazy"
+                alt="get up to 50% off now"
+                class="abs-img scale-up-anim"
+              />
+            </figure> -->
+          </div>
+        </section>
+
+        <!-- 
+        - #DELIVERY
+      -->
+
+        <section class="section section-divider gray delivery">
+          <div class="container">
+            <div class="delivery-content">
+              <h2 class="h2 section-title">
+                Naturales para ti <span class="span">para nosotros</span> y el planeta
+              </h2>
+
+              <p class="section-text"> En Sandwich Nature, estamos dedicados a marcar la diferencia en el mundo que compartimos. Nuestro compromiso inquebrantable hacia la sostenibilidad se basa en tres pilares fundamentales que reflejan nuestra visión de un futuro mejor tanto para el planeta como para las personas que lo habitan.
+                <li class="about-item">
+                  <!-- <ion-icon name="checkmark-outline"></ion-icon> -->
+
+                  <span class="span">1. Productos Naturales y Sostenibles. Envases reciclables 100%. Contamos con un envase de cartón ecofriendly. Líneas de productos personalizables al 100%.
+                    </span>
+                </li>
+                <li class="about-item">
+                  <!-- <ion-icon name="checkmark-outline"></ion-icon> -->
+
+                  <span class="span"> 2. Materia prima elaborada al estilo tradicional en todas su variedades. En Sandwich Nature buscamos que todos nuestros productos sean de calidad en toda nuestra producción.
+                    </span>
+                </li>
+                <li class="about-item">
+                  <!-- <ion-icon name="checkmark-outline"></ion-icon> -->
+
+                  <span class="span"> 3. Compromiso con las Personas y su Entorno. Invertimos en capacitación y desarrollo personal, reconociendo que empoderar a nuestra gente es esencial para crear un ambiente de trabajo sostenible y saludable. 
+                    </span>
+                </li>
+                
+
+              </p>
+
+              <!-- <button class="btn btn-hover">Conocé mas</button> -->
+            </div>
+
+            <figure class="delivery-banner">
+              <img
+                src="./assets/images/delivery-banner-bg.png"
+                width="700"
+                height="602"
+                loading="lazy"
+                alt="clouds"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/delivery-boy.svg"
+                width="1000"
+                height="880"
+                loading="lazy"
+                alt="delivery boy"
+                class="w-100 delivery-img"
+                data-delivery-boy
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+        <section class="section section-divider white testi">
+          <div class="container">
+            <p class="h2 section-subtitle">Reseñas</p>
+
+            <h2 class="h2 section-title">
+              Opiniones de nuestros <span class="span">clientes</span>
+            </h2>
+
+            <p class="section-title">
+              En Sandwich Nature, la satisfacción de nuestros clientes es nuestra prioridad número uno. Queremos compartir contigo lo que algunos de ellos han experimentado al disfrutar de nuestros deliciosos sandwiches. Sus opiniones son el reflejo de nuestro compromiso con la calidad y el servicio excepcional. Descubre lo que dicen sobre nosotros.
+            </p>
+
+            <ul class="testi-list has-scrollbar">
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-1.jpeg"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        alt="Robert William"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">Damian</h3>
+
+                      <p class="testi-title">¡Recomedables!</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    Mi experiencia en Sandwich Nature fue fantástica. El ambiente acogedor y limpio hace que la comida sea aún más placentera. El personal siempre se esfuerza en complacer a los clientes.                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-2.jpeg"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        alt="Thomas Josef"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">Juan Araujo</h3>
+
+                      <p class="testi-title">¡Los número uno!</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    La calidad de los sandwiches aquí es excepcional. Cada bocado es una explosión de sabor. Ingredientes frescos y opciones saludables disponibles. Mi elección número uno.                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-3.jpeg"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        alt="Charles Richard"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">María Florencia Corva</h3>
+
+                      <p class="testi-title">¡Increible!</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    Los sandwiches de Sandwich Nature son asombrosos. Variedad y frescura en cada bocado. El servicio rápido y el personal siempre son amables. Mi lugar favorito para consumir un delicioso sandwich.
+                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BANNER
+      -->
+
+        <section class="section section-divider gray banner">
+          <div class="container">
+            <ul class="banner-list">
+              <li class="banner-item banner-lg">
+                <div class="banner-card">
+                  <img
+                    src="./assets/images/banner-1.png"
+                    width="550"
+                    height="450"
+                    loading="lazy"
+                    alt="Discount For Delicious Tasty Burgers!"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <!-- <p class="banner-subtitle">50% Off!</p> -->
+
+                    <h3 class="banner-title">
+                      ¡Disfruta de nuestros Artesanos!
+                    </h3>
+
+                    <!-- <p class="banner-text">Promoción 50% menos solo esta semana</p> -->
+
+                    <button class="btn" data-pdf="assets/archivos/artesanos.pdf">Haz tu pedido</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-sm">
+                <div class="banner-card">
+                  <img
+                    src="./assets/images/banner-2.png"
+                    width="550"
+                    height="465"
+                    loading="lazy"
+                    alt="Delicious Pizza"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <h3 class="banner-title">¡Wraps riquísimos!</h3>
+
+                    <!-- <p class="banner-text">50% off</p> -->
+
+                    <button class="btn" data-pdf="assets/archivos/wraps.pdf">Haz tu pedido</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-sm">
+                <div class="banner-card">
+                  <img
+                    src="./assets/images/banner-3.png"
+                    width="550"
+                    height="465"
+                    loading="lazy"
+                    alt="American Burgers"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <h3 class="banner-title">American Style</h3>
+
+                    <!-- <p class="banner-text">50% off</p> -->
+
+                    <button class="btn" data-pdf="assets/archivos/american style.pdf">Haz tu pedido</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-md">
+                <div class="banner-card">
+                  <img
+                    src="./assets/images/banner-4.png"
+                    width="550"
+                    height="220"
+                    loading="lazy"
+                    alt="Tasty Buzzed Pizza"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <h3 class="banner-title">¡10% de descuento en tu primer pedido!</h3>
+
+                    <!-- <p class="banner-text">¡10% de descuento en tu primer pedido!</p> -->
+
+                    <button class="btn" data-pdf="assets/archivos/fresh.pdf">Haz tu pedido</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section section-divider white blog" id="blog">
+          <div class="container">
+            <p class="h2 section-title">Nuestro Blog</p>
+
+            <h2 class="h2 section-title">
+              Novedades, opiniones, tips <span class="span">y más!</span>
+            </h2>
+
+            <p class="section-text">
+              ¡Temperatura, tiempo de cocción y recipiente donde es ideal cocinarlos para que salgan espectaculares!
+            </p>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="What Do You Think About Cheese Pizza Recipes?"
+                      class="w-100"
+                    />
+
+                    <div class="badge">Artesano HOT</div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="card-meta-wrapper">
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time class="meta-info" datetime="2022-01-01"
+                          >Agos 24 2023</time
+                        >
+                      </a>
+
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <p class="meta-info">Florencia Corva</p>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Horno convección y microondas</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Horno convección: precalentar a 150 oC , introducir el sándwich con embalaje y calentar durante 150 segundos...
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span>Leer mas</span>
+
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Making Chicken Strips With New Delicious Ingridents."
+                      class="w-100"
+                    />
+
+                    <div class="badge">Fresh</div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="card-meta-wrapper">
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time class="meta-info" datetime="2022-01-01"
+                          >Agos 24 2023</time
+                        >
+                      </a>
+
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <p class="meta-info">Florencia Corva</p>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Dentro del embalaje. Horno de convección y microondas.</a>
+                    </h3>
+                    
+                    <p class="card-text">
+                      Horno convección: precalentar a 150 oC, introducir el sándwich con embalaje y calentar durante 150 segundos...
+                    </p>
+                    
+                    <a href="pagina-de-entrada-completa.html" class="btn-link">
+                      <span>Leer más</span>
+                    </a>                    
+ <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Innovative Hot Chessyraw Pasta Make Creator Fact."
+                      class="w-100"
+                    />
+
+                    <div class="badge">Pan de agua</div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="card-meta-wrapper">
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time class="meta-info" datetime="2022-01-01"
+                          >Agos 24 2023</time
+                        >
+                      </a>
+
+                      <a href="#" class="card-meta-link">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <p class="meta-info">Florencia Corva</p>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Dentro del embalaje. Horno de convección y microondas.</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Horno convección: precalentar a 150 oC , introducir el sándwich con embalaje y calentar durante 150 segundos...
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <span>Leer mas</span>                   
+
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div
+        class="footer-top"
+        style="background-image: url('./assets/images/footer-illustration.png')"
+      >
+        <div class="container">
+          <div class="footer-brand">
+            <a href="" class="logo">Arganature S.L.<span class="span">.</span></a>
+
+            <p class="footer-text">
+              Desde Sandwich Nature además, queremos proporcionarte una experiencia agradable llena de sabor con productos saludables y sostenibles.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/sandwich-nature/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contacto</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">620849421</p>
+            </li>
+            <li>
+              <p class="footer-list-item"> Fijo: +34 918 29 43 07</p>
+            </li>
+            <li>
+              <p class="footer-list-item">info@arganture.es</p>
+            </li>
+
+            <li>
+              <address class="footer-list-item">
+                Calle Monte Potrero, 36 nave 52
+28500 Arganda del Rey (Madrid)
+              </address>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Horarios de apertura</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">Lunes-Viernes: 08:00-15:00</p>
+            </li>
+
+          </ul>
+
+
+           <ul class="footer-list">
+            <li>
+              <p class="footer-list-title" >Politicas</p>
+            </li>
+
+            <li>
+              <a class="footer-list-item" href="assets/archivos/cookies.pdf" style="color: #040505; text-decoration: underline;"download >Cookies</a>
+            </li>
+
+            <li>
+              <a class="footer-list-item" href="assets/archivos/privacidad.pdf" style="color: #040505; text-decoration: underline;"download >Privacidad</a>
+            </li>
+            <li>
+              <a href="https://www.neworkar.com" target="_blank">
+                <img src="assets/images/neworkarlargo.png" alt="Logo" width="200" height="200">
+              </a>
+            </li>                       
+            <p class="copyright-text">
+              &copy; 2023 <a href="#" class="copyright-link">Flor Corva</a> Todos los derechos reservados.
+            </p>
+            
+          </ul>
+
+          <!-- <form action="" class="footer-form">
+            <p class="footer-list-title">Hace tu pedido</p>
+
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="full_name"
+                required
+                placeholder="Nombre"
+                aria-label="Nombre"
+                class="input-field"
+              />
+
+              <input
+                type="mail"
+                name="mail_address"
+                required
+                placeholder="Email"
+                aria-label="Email"
+                class="input-field"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <select
+                name="total_person"
+                aria-label="Total person"
+                class="input-field"
+              >
+                <option value="person">Información</option>
+                <option value="2 person">Presupuesto</option>
+                <option value="3 person">Consultas</option>
+                <option value="4 person">Pedidos</option>
+                <option value="5 person">Reclamos</option>
+              </select>
+
+              <input
+                type="date"
+                name="booking_date"
+                aria-label="Reservation date"
+                class="input-field"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              required
+              placeholder="Message"
+              aria-label="Message"
+              class="input-field"
+            ></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </div> -->
+
+      <div class="footer-bottom">
+        <div class="container">
+          <!-- <p class="copyright-text">
+            &copy; 2023 <a href="#" class="copyright-link">Flor C.</a> T.D.A. 
+          </p> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <a href="https://wa.me/+34620849421?text=¡Hola!%20Quiero%20saber%20más%20sobre%20tu%20producto." target="_blank" class="whatsapp-button">
+      <img src="assets/images/wasap.png" alt="Icono de Whatsapp">
+  </body>
+</html>
